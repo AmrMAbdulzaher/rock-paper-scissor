@@ -23,7 +23,7 @@ int main()
     int computerScore = 0;
     int continueGame = 1; // Flag to control the game loop
 
-    system("clear"); //clear at start
+    system(CLEAR); //clear at start
 
     printf("\n\t\t\t\t  Welcome to ROCK, PAPER and SICCORIS Mini Game\n");
     printf("\t\t\t\t=================================================\n");
@@ -82,13 +82,13 @@ int main()
 
         if (continueGame)
         {
-            system("clear");
+            system(CLEAR);
             rpsGame(userChoice, computerChoice, &userScore, &computerScore);
         }
 
     } while (continueGame);
 
-    system("clear");
+    system(CLEAR);
     printf("\n\t\t\t\t\t\tSee you soon! :)\n");
     return 0;
 }
