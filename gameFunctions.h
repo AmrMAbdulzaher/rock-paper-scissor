@@ -8,5 +8,5 @@
 
 #define TRUE 1
 
-void rspGame(char, char, int*, int*);
+void rpsGame(char, char, int*, int*);
 void printGameInterface(int, int);

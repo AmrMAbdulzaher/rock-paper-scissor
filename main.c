@@ -25,7 +25,7 @@ int main()
 
     system("clear"); //clear at start
 
-    printf("\n\t\t\t\t  Welcome to ROCK, SICCORIS and PAPER Mini Game\n");
+    printf("\n\t\t\t\t  Welcome to ROCK, PAPER and SICCORIS Mini Game\n");
     printf("\t\t\t\t=================================================\n");
 
     do {
@@ -41,18 +41,18 @@ int main()
             case 4: computerChoice = 'r'; break;
             case 8: computerChoice = 'r'; break;
                 
-            //scissor random values
-            case 1: computerChoice = 's'; break;
-            case 5: computerChoice = 's'; break;
-            case 6: computerChoice = 's'; break;
-                
             //paper random values
-            case 2: computerChoice = 'p'; break;
-            case 3: computerChoice = 'p'; break;
-            case 7: computerChoice = 'p'; break;
+            case 1: computerChoice = 'p'; break;
+            case 5: computerChoice = 'p'; break;
+            case 6: computerChoice = 'p'; break;
+                
+            //scissor random values
+            case 2: computerChoice = 's'; break;
+            case 3: computerChoice = 's'; break;
+            case 7: computerChoice = 's'; break;
         }
         
-        printf("\t\t\tEnter r for ROCK, s for SCISSOR, p for PAPER, or e for EXIT: ");
+        printf("\t\t\tEnter r for ROCK, p for PAPER, s for SCISSOR, or e for EXIT: ");
         
         //INVALID INPUT HANDLING LOOP
         while (TRUE)
@@ -66,7 +66,7 @@ int main()
 			int c;
 			while ((c = getchar()) != '\n' && c != EOF);
             
-            if (userChoice == 'r' || userChoice == 's' || userChoice == 'p') {
+            if (userChoice == 'r' || userChoice == 'p' || userChoice == 's') {
                 break;
             }
             else if (userChoice == 'e')
@@ -76,14 +76,14 @@ int main()
             }
             else
             {
-                printf("\t\t\tInvalid Input! Re-enter 'r', 's', 'p', or 'e': ");
+                printf("\t\t\tInvalid Input! Re-enter 'r', 'p', 's', or 'e': ");
             }
         }
 
         if (continueGame)
         {
             system("clear");
-            rspGame(userChoice, computerChoice, &userScore, &computerScore);
+            rpsGame(userChoice, computerChoice, &userScore, &computerScore);
         }
 
     } while (continueGame);

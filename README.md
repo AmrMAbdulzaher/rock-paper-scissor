@@ -17,4 +17,4 @@ Welcome to the Rock, Paper, Scissors Mini Game! This is a simple command-line ga
 
 ## Author
 
-Amr Mohamed Abdulzaher
+[Amr Mohamed Abdulzaher]

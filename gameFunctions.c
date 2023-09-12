@@ -14,7 +14,7 @@ void printGameInterface(int userScore, int compScore)
     printf("Computer: %d\t\t\t    ======================================\n", compScore);
 }
 
-void rspGame(char user, char computer, int* userScore, int* compScore)
+void rpsGame(char user, char computer, int* userScore, int* compScore)
 {
     if ((user == 'r' && computer == 's') || (user == 's' && computer == 'p') || (user == 'p' && computer == 'r'))
 	{
